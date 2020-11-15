@@ -40,8 +40,10 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
+    "i18next": "^19.8.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-i18next": "https://github.com/pedrodurek/react-i18next.git"
   },
   "husky": {
     "hooks": {
@@ -49,16 +51,11 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --find-config-path --write",
-      "eslint --fix --cache"
-    ],
+    "*.js": ["prettier --find-config-path --write", "eslint --fix --cache"],
     "*.{tsx,ts}": [
       "prettier --find-config-path --parser typescript --write",
       "eslint --fix --cache"
     ],
-    "*.json": [
-      "prettier --find-config-path --parser json --write"
-    ]
+    "*.json": ["prettier --find-config-path --parser json --write"]
   }
 }

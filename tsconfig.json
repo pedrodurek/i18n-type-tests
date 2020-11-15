@@ -5,13 +5,15 @@
     "module": "commonjs",
     "strict": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "noEmit": true,
     "baseUrl": "./src",
     "paths": {
-      "components": ["components"]
+      "components": ["components"],
+      "i18n": ["i18n"]
     }
   }
 }
