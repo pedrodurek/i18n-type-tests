@@ -40,6 +40,12 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     indent: 'off',
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['react-i18next'],
+      },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
