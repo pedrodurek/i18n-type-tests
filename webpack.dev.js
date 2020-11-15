@@ -5,6 +5,7 @@ module.exports = merge(base, {
   mode: 'development',
   devServer: {
     port: 3000,
+    publicPath: '/dist',
   },
   entry: {
     app: './src/index.tsx',
